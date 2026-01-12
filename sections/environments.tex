@@ -4,7 +4,9 @@
 \begin{quote}
 \lipsum[1][1-6]
 \end{quote}
-
+\annotation{
+This slide demonstrates the quote environment, which is used for displaying quoted text with proper indentation and italic styling. The quote environment automatically adds appropriate margins and formatting to make quoted content stand out from regular text.
+}
 \end{myslide}
 
 %------------------------------
@@ -21,7 +23,9 @@
 \begin{myalgorithm}{Some Text}
 \lipsum[1][1-3]
 \end{myalgorithm}
-
+\annotation{
+This slide shows three special environments: mytheorem, mydefinition, and myalgorithm. These are custom environments that provide styled boxes for presenting theorems, definitions, and algorithms. Each has distinct visual styling to help differentiate types of content in technical presentations.
+}
 \end{myslide}
 
 %------------------------------
@@ -60,7 +64,9 @@
 \end{column}
 
 \end{columns}
-
+\annotation{
+This slide demonstrates special call-out boxes that can be embedded within itemize environments using the itembox command. The template provides several box types: myremark for general remarks, myimportant for important information, myfuture for future work, and myquestion for questions. These boxes help highlight specific types of content.
+}
 \end{myslide}
 
 %------------------------------
@@ -109,7 +115,9 @@
 \end{column}
 
 \end{columns}
-
+\annotation{
+This slide shows more advanced usage of call-out boxes, including mixing them with regular list items and using them within nested lists. The unskip command is demonstrated for better spacing control when boxes follow nested list environments. Note that this slide uses myslidefragile instead of myslide because it contains lstinline commands.
+}
 \end{myslidefragile}
 
 %------------------------------
@@ -154,7 +162,9 @@
 \end{column}
 
 \end{columns}
-
+\annotation{
+This slide demonstrates additional call-out box types: myoptional for optional content and myreview for review context. The myreview box accepts a parameter for the review context title. The slide also shows how these boxes can be nested within multiple levels of itemize environments.
+}
 \end{myslide}
 
 %------------------------------
@@ -175,5 +185,7 @@ print('Hello, world!')
 \end{lstlisting}
 
 Be sure to use the \lstinline{myslidefragile} environment!
-
+\annotation{
+This slide demonstrates code listings using the lstlisting environment. The template supports syntax highlighting for multiple languages including MATLAB and Python. The xleftmargin option is used to control indentation. Important: code listings require the myslidefragile environment instead of myslide because they contain verbatim content.
+}
 \end{myslidefragile}

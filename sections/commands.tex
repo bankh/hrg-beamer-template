@@ -4,7 +4,9 @@
 Use\parnote{This is the first one} \lstinline{\parnote} and\parnote{This is the second one} \lstinline{\parnotefull} for\parnotefull{This is the third one that takes up the rest of the line} footnotes\parnotefull{This is the forth one that takes up the rest of the line}\parnote{This is the fifth one}
 
 Use the \lstinline{b} slide option when you have footnotes
-
+\annotation{
+This slide demonstrates footnote commands: parnote for inline footnotes and parnotefull for footnotes that span the full line width. When using footnotes, you should use the 'b' option in the myslide environment to provide extra space at the bottom for the footnote content.
+}
 \end{myslidefragile}
 
 %------------------------------
@@ -17,7 +19,9 @@ Use the \lstinline{b} slide option when you have footnotes
 \lstinline{\urlvideo} with an example \urlvideo{www.youtube.com/watch?v=N17Od3rY0bA} and in a footnote\parnote{\urlvideo{www.youtube.com/watch?v=N17Od3rY0bA}}
 
 \lstinline{\urlyoutube} with an example \urlyoutube{N17Od3rY0bA}
-
+\annotation{
+This slide demonstrates various URL commands: urlfull for complete URLs, urlhttps for HTTPS URLs without the protocol prefix, urlvideo for video links, and urlyoutube for YouTube video IDs. These commands automatically format URLs with appropriate icons and can be used in footnotes as well.
+}
 \end{myslidefragile}
 
 %------------------------------
@@ -42,7 +46,9 @@ A & = \eqbox{\frac{\pi r^2}{2}}
 \begin{align}
 A & = \eqbox{\frac{\pi r^2}{2}}
 \end{align}
-
+\annotation{
+This slide demonstrates several utility commands: qedsymbol for the QED symbol used in proofs, myterm for highlighting important terms (which can be collected into a glossary), myline for horizontal dividers, and eqrepeat for repeating equation numbers across slides. The eqbox command is also shown for highlighting equations.
+}
 \end{myslidefragile}
 
 %------------------------------
@@ -69,7 +75,9 @@ A & = \eqbox{\frac{\pi r^2}{2}}
 \end{itemize}
 
 Doesn't work in equation environments, but you can use inline math such as \myterm{Term $x - \mathcal{L} - \bm{x}$}
-
+\annotation{
+This slide shows various uses of the myterm command for highlighting important terms. Terms can be used inline in text, in footnotes, within theorem environments, in lists, and in call-out boxes. They can also include inline math. All terms are automatically collected and can be displayed in a glossary slide using the mytermslides command.
+}
 \end{myslide}
 
 %------------------------------
@@ -78,5 +86,7 @@ Doesn't work in equation environments, but you can use inline math such as \myte
 Use \lstinline{\matlabfunction} for the hyperlinked MATLAB example below
 
 \matlabfunction{ex_matlab_basics.m}{https://github.com/danielrherber/engineering-optimization-examples/blob/main/1-introduction/matlab/ex_matlab_basics.m}
-
+\annotation{
+This slide demonstrates the matlabfunction command, which creates a hyperlinked reference to a MATLAB file. The command takes the filename and a URL, automatically formatting it with appropriate styling and making it clickable in the PDF.
+}
 \end{myslidefragile}

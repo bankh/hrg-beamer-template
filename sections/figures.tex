@@ -2,7 +2,9 @@
 \begin{myslide}{c}{\lstinline{myfig} Command}
 
 \myfig{\mygraphicspath/csu.pdf}{0.25}
-
+\annotation{
+This slide demonstrates the myfig command, which centers a figure on the slide. The command takes the figure path and a scale factor. This is the simplest way to include a single centered figure.
+}
 \end{myslide}
 
 %------------------------------
@@ -27,7 +29,9 @@
 \myfigcol{\mygraphicspath/csu.pdf}{0.15}
 
 \end{columns}
-
+\annotation{
+This slide demonstrates the myfigcol command, which places figures within column environments. The first example shows a figure alongside text, while the second shows multiple figures side-by-side. The [t] option aligns columns at the top.
+}
 \end{myslide}
 
 %------------------------------
@@ -44,7 +48,9 @@
 \put (0,0) {\includegraphics[scale=0.05]{\mygraphicspath/csu.pdf}}%
 \put (50,115) {\makebox[0pt]{\textcolor{niceblue}{Above Centered Text}}}%
 \end{myoverpic}
-
+\annotation{
+This slide demonstrates the myoverpic environment, which allows you to overlay text or graphics on top of a base figure. The put command positions elements using coordinates, and makebox with 0pt width centers text. This is useful for annotating figures with labels or additional information.
+}
 \end{myslide}
 
 %------------------------------
@@ -63,7 +69,9 @@
 \end{myoverpiccol}
 
 \end{columns}
-
+\annotation{
+This slide demonstrates the myoverpiccol environment, which is similar to myoverpic but designed to work within column environments. This allows you to place annotated figures side-by-side with other content.
+}
 \end{myslide}
 
 %------------------------------
@@ -77,7 +85,9 @@
 \end{myoverpiccolgrid}
 
 \end{columns}
-
+\annotation{
+This slide demonstrates the myoverpiccolgrid environment, which is like myoverpiccol but includes a grid overlay. This is useful for aligning annotations or understanding coordinate positions when placing overlay elements.
+}
 \end{myslide}
 
 %------------------------------
@@ -120,7 +130,9 @@ Item separation
 \uselengthunit{in}\printlength{\x}
 \uselengthunit{mm}\printlength{\x}
 \uselengthunit{pt}\printlength{\x}
-
+\annotation{
+This slide displays various LaTeX length dimensions used in the template, showing their values in different units (inches, millimeters, points). Understanding these dimensions is helpful for precise layout control and figure sizing.
+}
 \end{myslidefragile}
 
 %------------------------------
@@ -143,5 +155,7 @@ Recommended figure height 1.5 in (below)
 Matlab recommended figure width 2.25 in
 
 Matlab recommended figure height 1.6875 in
-
+\annotation{
+This slide shows recommended figure sizes for side-by-side layouts. For general use, 2 inches width and 1.5 inches height work well. For MATLAB-generated figures, slightly larger dimensions (2.25 by 1.6875 inches) are recommended to maintain readability.
+}
 \end{myslide}

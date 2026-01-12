@@ -24,7 +24,9 @@
 \item \lipsum[1][6]
 
 \end{itemize}
-
+\annotation{
+This slide demonstrates automatic animations using the [<+->] option in itemize environments. Each item appears sequentially when advancing slides. Note that animations only work when the handout option is removed from the documentclass. Nested lists also animate properly.
+}
 \end{myslide}
 
 %------------------------------
@@ -61,7 +63,9 @@
 }
 
 \end{columns}
-
+\annotation{
+This slide demonstrates custom animation ordering using the uncover command with specific frame numbers. Items can appear in any order you specify (e.g., item 1, then item 4, then item 5, then item 2), and figures can also be animated. This gives precise control over the presentation sequence.
+}
 \end{myslide}
 
 %------------------------------
@@ -110,7 +114,9 @@
 \end{column}
 
 \end{columns}
-
+\annotation{
+This slide shows that call-out boxes can also be animated using the [<+->] option. Each box and list item appears sequentially, creating a progressive reveal effect. This is useful for building up complex information step by step.
+}
 \end{myslidefragile}
 
 %------------------------------
@@ -145,5 +151,7 @@
 }
 
 \end{columns}
-
+\annotation{
+This slide demonstrates animating figures using the uncover command with the <+-> syntax, which automatically increments the frame number. Text and figures can appear sequentially, creating a dynamic presentation flow.
+}
 \end{myslide}

@@ -5,6 +5,17 @@
 \mode<beamer|second|trans|article>{\newcommand\mytrans{}}
 \mode<handout>{\newcommand\mytrans{}}
 
+% Custom annotation system for WebPressive
+% Creates PDF annotations for extraction (not visible in PDF)
+\makeatletter
+
+% Annotation command - placeholder for speaker notes
+% Used to keep notes in source files near slides for reference.
+% ACTUAL notes for WebPressive must be synced to pdfsubject in 1-packages.tex
+\newcommand{\annotation}[1]{%
+% This command is a no-op but keeps the source organized
+}
+\makeatother
 
 % main myslide
 \newenvironment{myslide}[2]

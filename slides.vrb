@@ -1,5 +1,4 @@
-%------------------------------
-\begin{myslidefragile}{b}{References with Bib\LaTeX}
+\frametitle{{\mytitlemark {References with Bib\LaTeX }}}\mytrans 
 
 \lstinline{\cite} with an example: \cite{Shampine2007}
 
@@ -29,4 +28,4 @@ See command \lstinline{\refslides} for printing the references
 \annotation{
 This slide demonstrates various BibLaTeX citation commands: cite for numeric citations, textcite for author-year in text, parencite for parenthetical citations, fullcite for complete citations, citetitle for titles, citeauthor for authors, and citeurl for URLs. Multiple citations can be combined, and citations work in footnotes. The refslides command generates a reference slide.
 }
-\end{myslidefragile}
+\beamerclosesubstitutedenvironement {myslidefragile}

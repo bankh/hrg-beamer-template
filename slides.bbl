@@ -1,0 +1,202 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Boyd2009}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ec94d94cc487dd71939a90cbeaaf47d0}{%
+           family={Boyd},
+           familyi={B\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2608d599a0bc2a784c301329a8da5f7b}{%
+           family={Vandenberghe},
+           familyi={V\bibinitperiod},
+           given={Lieven},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{fullhash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{bibnamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{authorbibnamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{authornamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{authorfullhash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{7}
+      \field{title}{Convex Optimization}
+      \field{year}{2009}
+    \endentry
+    \entry{Cipra2000}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e39c1cd9589884c12cd4a19abb59bb07}{%
+           family={Cipra},
+           familyi={C\bibinitperiod},
+           given={Barry\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e39c1cd9589884c12cd4a19abb59bb07}
+      \strng{fullhash}{e39c1cd9589884c12cd4a19abb59bb07}
+      \strng{bibnamehash}{e39c1cd9589884c12cd4a19abb59bb07}
+      \strng{authorbibnamehash}{e39c1cd9589884c12cd4a19abb59bb07}
+      \strng{authornamehash}{e39c1cd9589884c12cd4a19abb59bb07}
+      \strng{authorfullhash}{e39c1cd9589884c12cd4a19abb59bb07}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM News}
+      \field{month}{5}
+      \field{number}{4}
+      \field{title}{The Best of the 20th Century: Editors Name Top 10 Algorithms}
+      \field{volume}{33}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb https://archive.siam.org/pdf/news/637.pdf
+      \endverb
+      \verb{url}
+      \verb https://archive.siam.org/pdf/news/637.pdf
+      \endverb
+    \endentry
+    \entry{Margalit2017}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=53e4c55b9dbbda75397b53fe89cf3971}{%
+           family={Margalit},
+           familyi={M\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eedc1812a6a9cc76667536f702745c56}{%
+           family={Rabinoff},
+           familyi={R\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Georgia Institute of Technology}%
+      }
+      \strng{namehash}{a5d97963631ef7fa0a132cdcffa8e6dd}
+      \strng{fullhash}{a5d97963631ef7fa0a132cdcffa8e6dd}
+      \strng{bibnamehash}{a5d97963631ef7fa0a132cdcffa8e6dd}
+      \strng{authorbibnamehash}{a5d97963631ef7fa0a132cdcffa8e6dd}
+      \strng{authornamehash}{a5d97963631ef7fa0a132cdcffa8e6dd}
+      \strng{authorfullhash}{a5d97963631ef7fa0a132cdcffa8e6dd}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Interactive Linear Algebra}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://textbooks.math.gatech.edu/ila/ila.pdf
+      \endverb
+      \verb{url}
+      \verb https://textbooks.math.gatech.edu/ila/ila.pdf
+      \endverb
+    \endentry
+    \entry{Martins2021}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f78019558101a841974c5f3b5a885657}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={Joaquim\bibnamedelimb R.\bibnamedelimi R.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93ca2cb81a3707f9a26c8b4c7425e445}{%
+           family={Ning},
+           familyi={N\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{55dc6cf10b12287e88ed45c38cbd30af}
+      \strng{fullhash}{55dc6cf10b12287e88ed45c38cbd30af}
+      \strng{bibnamehash}{55dc6cf10b12287e88ed45c38cbd30af}
+      \strng{authorbibnamehash}{55dc6cf10b12287e88ed45c38cbd30af}
+      \strng{authornamehash}{55dc6cf10b12287e88ed45c38cbd30af}
+      \strng{authorfullhash}{55dc6cf10b12287e88ed45c38cbd30af}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{October 5th, 2021 edition}
+      \field{title}{Engineering Design Optimization}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1017/9781108980647
+      \endverb
+    \endentry
+    \entry{Shampine2007}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a38563f6d7948ee720e27cb96d5e8a0a}{%
+           family={Shampine},
+           familyi={S\bibinitperiod},
+           given={L.\bibnamedelimi F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a38563f6d7948ee720e27cb96d5e8a0a}
+      \strng{fullhash}{a38563f6d7948ee720e27cb96d5e8a0a}
+      \strng{bibnamehash}{a38563f6d7948ee720e27cb96d5e8a0a}
+      \strng{authorbibnamehash}{a38563f6d7948ee720e27cb96d5e8a0a}
+      \strng{authornamehash}{a38563f6d7948ee720e27cb96d5e8a0a}
+      \strng{authorfullhash}{a38563f6d7948ee720e27cb96d5e8a0a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Mathematical Software}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{Accurate numerical derivatives in {MATLAB}}
+      \field{volume}{33}
+      \field{year}{2007}
+      \field{pages}{26}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1145/1268776.1268781
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
