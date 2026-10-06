@@ -155,3 +155,44 @@ This slide shows that call-out boxes can also be animated using the [<+->] optio
 This slide demonstrates animating figures using the uncover command with the <+-> syntax, which automatically increments the frame number. Text and figures can appear sequentially, creating a dynamic presentation flow.
 }
 \end{myslide}
+
+%------------------------------
+\begin{myslidefragile}{c}{Animated Media in WebPressive}
+
+\begin{columns}[t]
+
+\begin{column}{0.45\textwidth}
+\centering
+\animstill{27mm}{videos/latex_talk_poster.png}{videos/latex_talk.mp4}{https://www.youtube.com/watch?v=N17Od3rY0bA}
+
+\medskip
+MP4 video
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\centering
+\animstill{27mm}{videos/latex_talk_poster.png}{videos/latex_talk.gif}{https://www.youtube.com/watch?v=N17Od3rY0bA}
+
+\medskip
+Animated GIF
+\end{column}
+
+\end{columns}
+
+\bigskip
+
+\begin{itemize}
+
+\item A PDF cannot play a video or a GIF, so the slide shows a still and \myhref{https://webpressive.github.io}{WebPressive} plays the media over it
+
+\item \lstinline|\animstill{height}{poster}{media}{source}| links the still to the media through \lstinline|wpmedia:| and attaches the media file to the PDF
+
+\item The orange badge opens the source video; other PDF viewers show the still
+
+\item Clip: CSU Systems Engineering Friday Talk (Nov.~3, 2023) \urlyoutube{N17Od3rY0bA}
+
+\end{itemize}
+\annotation{
+This slide demonstrates the animstill command for animated media in WebPressive. The same clip is shown twice: on the left as an MP4 video and on the right as an animated GIF. The PDF carries a still of each, and WebPressive plays the media file over the still at its exact position. The animstill command adds a wpmedia link to the still, attaches the media file to the PDF so the PDF alone carries it, and draws an orange play badge on the still's bottom-left corner that links to the source video.
+}
+\end{myslidefragile}

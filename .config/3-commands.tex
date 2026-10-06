@@ -370,6 +370,64 @@ breaklines=true,
 }
 
 %----------------------------------------------------------------
+% animated media (WebPressive)
+%----------------------------------------------------------------
+% A PDF cannot play a video or a GIF. The slide shows a still (the poster), and WebPressive plays the
+% media file over it, found through a wpmedia: link on the poster. The file is attached to the PDF, so
+% the PDF alone carries it. An orange play badge sits on the poster's bottom-left corner and links to
+% the media's source. Other PDF viewers show the poster, and the badge still opens the source.
+% https://webpressive.github.io
+\newif\ifwpmedia \wpmediatrue % \wpmediafalse: plain posters with their badges, no media attached
+
+\definecolor{wpbadge}{HTML}{D64309}
+
+% badge sizes follow the page width, as in WebPressive: 4.4 mm across on a 160 mm wide page
+\newlength{\wpbadgeunit}
+
+% no 1pt padding around link boxes (pdfTeX's default): a media link must match its poster
+\hypersetup{pdflinkmargin=0pt}
+
+\makeatletter
+
+% attach a media file (path under \mygraphicspath) to the PDF, once per file
+\newcommand{\wpmediaattach}[1]{%
+\ifcsname wpm@#1\endcsname\else%
+\global\expandafter\let\csname wpm@#1\endcsname\relax%
+\embedfile[filespec=#1]{\mygraphicspath/#1}%
+\fi%
+}
+
+% \animstill{height}{poster}{media}{source url}, with poster and media paths under \mygraphicspath
+% example: \animstill{25mm}{videos/clip_poster.png}{videos/clip.gif}{https://www.youtube.com/watch?v=...}
+% While Beamer covers the poster (ghosted on an earlier click), both links are left out, so the media
+% never plays over a faded still
+\newsavebox{\wp@posterbox}
+\newsavebox{\wp@sourcebox}
+\newcommand{\animstill}[4]{%
+\setlength{\wpbadgeunit}{0.00625\paperwidth}%
+% the links are boxed before the picture: a first \href{wpmedia:...} typeset inside a TikZ node loses the node
+\sbox{\wp@posterbox}{\includegraphics[height=#1]{\mygraphicspath/#2}}%
+\sbox{\wp@sourcebox}{\rule{4.4\wpbadgeunit}{0pt}\rule{0pt}{4.4\wpbadgeunit}}%
+\ifnum\beamer@coveringdepth=\z@%
+\ifwpmedia%
+\wpmediaattach{#3}%
+\sbox{\wp@posterbox}{\href{wpmedia:#3}{\usebox{\wp@posterbox}}}%
+\fi%
+\sbox{\wp@sourcebox}{\href{#4}{\usebox{\wp@sourcebox}}}%
+\fi%
+\begin{tikzpicture}[baseline=(v.south)]%
+\node[inner sep=0pt, draw=mediumgray, line width=0.3pt] (v) {\usebox{\wp@posterbox}};%
+\fill[wpbadge, opacity=0.9] (v.south west) circle[radius=2.2\wpbadgeunit];%
+\fill[white] ([shift={(-0.75\wpbadgeunit,-1.15\wpbadgeunit)}]v.south west)%
+-- ([shift={(-0.75\wpbadgeunit,1.15\wpbadgeunit)}]v.south west)%
+-- ([shift={(1.25\wpbadgeunit,0pt)}]v.south west) -- cycle;%
+\node[inner sep=0pt] at (v.south west) {\usebox{\wp@sourcebox}};%
+\end{tikzpicture}%
+}
+
+\makeatother
+
+%----------------------------------------------------------------
 % parnotes
 %----------------------------------------------------------------
 \newcommand{\parnotefull}[1]{\parnote{\makebox[\textwidth][l]{#1}}}
